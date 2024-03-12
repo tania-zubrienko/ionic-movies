@@ -1,17 +1,9 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="ion-padding">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <h4>Los más populares</h4>
+  <app-slider [movies]="movies" [numSlides]="6"/>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <h4>Estrenos</h4>
+  <app-slider [movies]="newMovies" [numSlides]="4"/>
+
 </ion-content>

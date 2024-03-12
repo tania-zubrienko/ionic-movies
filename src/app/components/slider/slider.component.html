@@ -1,0 +1,11 @@
+
+<swiper-container
+[modules]="swiperModules"
+[slidesPerView] = "numSlides"
+[spaceBetween] = 20>
+  @for (movie of movies; track movie.id) {
+    <swiper-slide>
+        <img [src]=" movie.poster_path | image "/>
+    </swiper-slide>
+  }
+</swiper-container>
